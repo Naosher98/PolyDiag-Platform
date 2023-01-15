@@ -23,7 +23,7 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('PolyDiag Platform',
                           
                           ['Diabetes Prediction',
                            'Heart Disease Prediction',
@@ -242,7 +242,8 @@ if (selected == "Parkinsons Prediction"):
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
     st.success(parkinsons_diagnosis)
-
+    
+st.write("Developed by Naosher Mustakim.")
 
 
 
